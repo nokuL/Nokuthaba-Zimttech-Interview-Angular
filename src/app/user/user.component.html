@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <div class="text-center" style="padding: 20px; color: blue;">
+        <h1><p>Welcome {{firstName}}</p> </h1>
+        <p>Please record your lost items below </p>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form #lostItemForm="ngForm" (ngSubmit)="recordLostItem(lostItemForm)">
+
+            <p>Date item was lost</p>
+            <input type="date"
+            ngModel name="dateOfLoss"
+            id="dateOfLoss"
+            placeholder="Enter date item was lost"
+            class="form-control mb-3"
+            >
+            <input type="text"
+            ngModel
+            name="itemDescription"
+            id="itemDescription"
+            placeholder="Describe your lost item"
+            class="form-control mb-3"
+            >
+            <p>Province where items were lost</p>
+            <select ngModel name="province" id="province">
+                <option value="Harare">Harare</option>
+                <option value="MashWest">Mash West</option>
+                <option value="MashEast">Mash East</option>
+                <option value="MatNorth">Mat North</option>
+                <option value="MatSouth">Mat South</option>
+                <option value="Masvingo">Masvingo</option>
+                <option value="Midlands">Midlands</option>
+                <option value="Bulawayo">Bulawayo</option>
+
+            </select>
+            <br>
+            <br>
+\
+            <input type="submit"
+            value="Save Record"
+            class="btn btn-outline-primary form-control rounded-0">
+        </form>
+    </div>
+</div>
