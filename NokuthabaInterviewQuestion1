@@ -1,0 +1,156 @@
+1 ) public class MyTest{
+
+    public long computeDurationInMilliseconds(int hours , int minutes, int seconds) {
+        return (((hours * 60L) + minutes) * 60 + seconds ) * 1000;
+    }
+    public void doSomething() {
+       throw new RuntimeException();
+    }
+}
+
+
+
+2) public class MyClass {
+    private int foo = 42;
+    public int compute(int a) {
+        return a * foo;
+    }
+}
+
+3) class StringUtils {
+    public static String concatenate(String s1, String s2) {
+        return s1 + s2;
+    }
+}
+
+
+4)class ExampleClass {
+    public String someString;
+    public SomeType something;
+}
+
+public class SomeType {
+}
+
+
+
+5)public class Example2Class{
+    public void foo(String bar)  {
+        throw new RuntimeException("My Message");
+    }
+}
+
+6)public class Foo {
+    public Collection<User> listUsers() {
+        File userList = new File("/home/mylogin/Dev/users.txt");
+        Collection<User> users = parse(userList);
+        return users;
+    }
+}
+
+7)public class MyFoo{
+     public static void main(String[] args) {
+        System.out.println("It works");
+    }
+}
+
+8) public class MyFoorest{
+
+    public static void myFoorest( String string){
+
+        switch (string){
+            case "prepare":
+                System.out.println(string+" prepared");
+            case "execute":
+                System.out.println(string+" executed");
+            case "release":
+                System.out.println(string+" released");
+            default:
+                System.out.println("Invalid day");
+
+        }
+    }
+}
+
+
+
+9) class ParentClass {
+    public void doSomething(){
+        System.out.println("Parent doing something");
+    }
+}
+class FirstChildClass extends ParentClass {
+    public void doSomething(){
+        System.out.println("First born doing something");
+    }
+}
+
+
+10) class MikeClass{
+    void doSomething() {
+// TODO
+    }
+}
+
+11)public class Address {
+private String name;
+private Address address
+}
+
+public class Person implements Serializable {
+private static final long serialVersionUID = 1905122041950251207L;
+}
+
+12) public class Mine{
+    int foo(int a) {
+        int b = 12;
+        return b;
+    }
+}
+
+
+
+13) public class Myclass {
+public final int THRESHOLD = 3;
+}
+
+
+
+14 ) class A {
+    void process(List<A> list) {
+        list.stream()
+                .filter(a -> a instanceof B)
+                .map(a -> (B) a)
+                .map(B::<String>getObject)
+                .forEach(System.out::println);
+    }
+}
+class B extends A {
+    <T> T getObject() {
+        return null;
+    }
+}
+
+
+15)  interface Status {
+public static final int OPEN = 1;
+ public static final int CLOSED = 2;
+}
+
+16 ) public class Baidu{
+List<String> strings = new ArrayList<String>();
+Map<String,List<Integer>> map = new HashMap<String,List<Integer>>();
+}
+
+
+
+19) public class HelloWorld{
+    public void myMethod(){
+        String message = new Random().nextBoolean()?"hello world": "My Cat";
+        message+=" done";
+        System.out.println(message.toString());
+    }
+}
+
+
+
